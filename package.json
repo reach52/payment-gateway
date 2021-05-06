@@ -1,0 +1,28 @@
+{
+  "name": "reach52-adb",
+  "version": "0.0.1",
+  "main": "server.js",
+  "author": "Robert Janagap",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env DEBUG=server:debug NODE_ENV=development nodemon server.js"
+  },
+  "dependencies": {
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.1",
+    "mongoose": "^5.12.7",
+    "morgan": "^1.10.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "debug": "^4.3.1",
+    "mocha": "^8.3.2",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  }
+}
