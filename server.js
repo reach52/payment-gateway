@@ -4,10 +4,12 @@ const fs = require("fs");
 const path = require("path");
 const config = require("config");
 const cors = require("cors");
+const swaggerUi = require("swagger-ui-express");
+const swaggerDocument = require("./swagger.json");
 
 const app = express();
 
-/** Database */
+/** database */
 require("./database/connect")();
 
 /** express default bodyparser */
@@ -28,10 +30,17 @@ app.use(morgan("dev"));
 /** log all request to access.log */
 app.use(morgan("combined", { stream: accessLogStream }));
 
+/** swagger documentation */
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+/** routes */
+require("./routes/v1/")(app);
+
 const PORT = process.env.PORT || config.get("port");
 
 const listen = app.listen(PORT, () => {
   console.log("url:", `    http://localhost:${PORT}`);
+  console.log("doc:", `    http://localhost:${PORT}/api-docs`);
   console.log("server:", ` ${config.get("server")}`);
 });
 

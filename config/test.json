@@ -1,0 +1,6 @@
+{
+    "server": "development",
+    "port": 8080,
+    "mongoURL": ""
+  }
+  
