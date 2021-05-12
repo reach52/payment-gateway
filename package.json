@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "cross-env DEBUG=server:debug NODE_ENV=development nodemon server.js",
-    "test": "cross-env DEBUG=server:debug NODE_ENV=test mocha ./test/"
+    "test": "cross-env DEBUG=server:debug NODE_ENV=test mocha ./test/ --reporter spec --exit"
   },
   "dependencies": {
     "config": "^3.3.6",

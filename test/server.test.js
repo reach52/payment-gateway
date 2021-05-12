@@ -4,7 +4,7 @@ const http = require("chai-http");
 const server = require("../server");
 const config = require("config");
 
-const expect = chai.request;
+const expect = chai.expect;
 
 describe("Server", () => {
   it("Should exist", () => {
