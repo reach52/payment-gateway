@@ -3,9 +3,10 @@ pipeline{
     stages{
         stage("run backend"){
             steps{
-                echo 'executing dependencies '
-                nodejs("Node-14.15.3"){
+                echo 'executing dependencies'
+                nodejs('Node-14.15.3'){
                     sh 'yarn install'
+                    sh 'yarn test'
                 }
             }
         }
