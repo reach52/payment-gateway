@@ -19,12 +19,12 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][https://github.com/robert-janagap/express-app-bootstrap/graphs/contributors]
-[![Forks][forks-shield]][https://github.com/robert-janagap/express-app-bootstrap/network/members]
-[![Stargazers][stars-shield]][https://github.com/robert-janagap/express-app-bootstrap/stargazers]
-[![Issues][issues-shield]][https://github.com/robert-janagap/express-app-bootstrap/issues]
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/robert-janagap/]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
