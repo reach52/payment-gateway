@@ -215,7 +215,7 @@ Project Link: [https://github.com/Robert-Janagap/express-app-bootstrap](https://
 [stars-url]: https://github.com/Robert-Janagap/express-app-bootstrap/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Robert-Janagap/express-app-bootstrap
 [issues-url]: https://github.com/Robert-Janagap/express-app-bootstrap/issues
-[license-shield]: https://img.shields.io/github/license/Robert-Janagap/express-app-bootstrap
-[license-url]: https://github.com/Robert-Janagap/repo/blob/master/LICENSE.txt
+[license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
+[license-url]: https://github.com/Robert-Janagap/express-app-bootstrap/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/robert-janagap/
