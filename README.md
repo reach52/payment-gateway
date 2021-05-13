@@ -207,14 +207,14 @@ Project Link: [https://github.com/Robert-Janagap/express-app-bootstrap](https://
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Robert-Janagap/express-app-bootstrap/
-[contributors-url]: https://github.com/Robert-Janagap/repo/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/Robert-Janagap/express-app-bootstrap
+[contributors-url]: https://github.com/Robert-Janagap/express-app-bootstrap/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Robert-Janagap/express-app-bootstrap
-[forks-url]: https://github.com/Robert-Janagap/repo/network/members
+[forks-url]: https://github.com/Robert-Janagap/express-app-bootstrap/network/members
 [stars-shield]: https://img.shields.io/github/stars/Robert-Janagap/express-app-bootstrap
-[stars-url]: https://github.com/Robert-Janagap/repo/stargazers
+[stars-url]: https://github.com/Robert-Janagap/express-app-bootstrap/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Robert-Janagap/express-app-bootstrap
-[issues-url]: https://github.com/Robert-Janagap/repo/issues
+[issues-url]: https://github.com/Robert-Janagap/express-app-bootstrap/issues
 [license-shield]: https://img.shields.io/github/license/Robert-Janagap/express-app-bootstrap
 [license-url]: https://github.com/Robert-Janagap/repo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
