@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const errorHandling = require("../lib/errorsHandling");
 const mongoDBURL = require("config").get("mongoURL");
+
 module.exports = async () => {
   if (mongoDBURL === "" || mongoDBURL === null || mongoDBURL === undefined)
     return console.log("host:", `   No Connection`);
