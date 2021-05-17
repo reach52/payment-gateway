@@ -15,14 +15,15 @@ module.exports = async () => {
     });
     console.log("host:", `   ${conn.connection.host}`);
   } catch (error) {
-    console.error(
-      "error",
-      errorHandling({
-        errors: [error],
-        message: "Error Database",
-        status: 500,
-      })
-    );
-    process.exit(1);
+    mongoose.connection.close(() => {
+      console.error(
+        "error",
+        errorHandling({
+          errors: [error],
+          message: "Mongoose connection disconnected",
+          status: 500,
+        })
+      );
+    });
   }
 };

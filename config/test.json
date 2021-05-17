@@ -1,5 +1,5 @@
 {
   "server": "test",
   "port": 4000,
-  "mongoURL": ""
+  "mongoURL": "mongodb://localhost/mock"
 }
