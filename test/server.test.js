@@ -1,6 +1,4 @@
 const chai = require("chai");
-const request = require("supertest");
-const http = require("chai-http");
 const server = require("../server");
 const config = require("config");
 const mongoose = require("mongoose");
@@ -29,7 +27,7 @@ after(async () => {
 });
 
 describe("Mongo Database", () => {
-  it("Should start mongo server", async () => {
+  it("Should start mongo server", () => {
     expect(db).to.be.eql(mongoose.connection);
   });
 });
@@ -39,7 +37,7 @@ describe("Server", () => {
     expect(server).to.be.a("function");
   });
 
-  it("Should have a running port", async () => {
+  it("Should have a running port", () => {
     expect(server.port).to.equal(config.get("port"));
   });
 });
