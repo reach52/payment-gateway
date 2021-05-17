@@ -15,6 +15,8 @@ before(async () => {
   con = await mongoose.connect(mongoDBURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
   });
 
   db = mongoose.connection;
