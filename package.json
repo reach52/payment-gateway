@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "cross-env DEBUG=server:debug NODE_ENV=development nodemon server.js",
     "test": "cross-env DEBUG=server:debug NODE_ENV=test mocha ./test/ --reporter spec --exit",
-    "prod": "cross-env DEBUG=server:debug NODE_ENV=production node server.js"
+    "prod": "cross-env DEBUG=server:debug NODE_ENV=production node server.js",
+    "report": "cross-env DEBUG=server:debug NODE_ENV=test mocha ./test/ --reporter mochawesome --exit"
   },
   "dependencies": {
     "config": "^3.3.6",
@@ -24,6 +25,7 @@
     "chai-http": "^4.3.0",
     "debug": "^4.3.1",
     "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
     "nodemon": "^2.0.7",
     "supertest": "^6.1.3"
   }

@@ -8,7 +8,7 @@ const expect = chai.expect;
 
 describe("Server", () => {
   it("Should exist", () => {
-    expect(server).to.be.a("function");
+    expect(server).to.be.a("string");
   });
 
   it("Should have a running port", async () => {

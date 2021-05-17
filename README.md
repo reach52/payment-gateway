@@ -151,6 +151,10 @@ We have 3 types of environment test, development, production
     ```sh
     yarn test
     ```
+    Using **[Mochawesome](https://www.npmjs.com/package/mochawesome) test report generator**
+    ```sh
+    yarn report
+    ```
 3. For Production create `production.json` under `config` folder and enter required configuration
    **producation.json**
     ```sh
