@@ -11,11 +11,13 @@
     "report": "cross-env DEBUG=server:debug NODE_ENV=test mocha ./test/index.test.js --reporter mochawesome --exit"
   },
   "dependencies": {
+    "compression": "^1.7.4",
     "config": "^3.3.6",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "express-validator": "^6.10.1",
+    "helmet": "^4.6.0",
     "mongoose": "^5.12.7",
     "morgan": "^1.10.0",
     "swagger-ui-express": "^4.1.6"

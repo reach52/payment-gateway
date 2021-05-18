@@ -6,6 +6,8 @@ const config = require("config");
 const cors = require("cors");
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require("./swagger.json");
+const compression = require("compression");
+const helmet = require("helmet");
 
 const app = express();
 
@@ -17,6 +19,12 @@ app.use(express.json({ extended: false }));
 
 /** prevent cors issue*/
 app.use(cors());
+
+/** secure http */
+app.use(helmet());
+
+/** reduce/zip data size served to users */
+app.use(compression());
 
 /** create write stream (append mode)*/
 const accessLogStream = fs.createWriteStream(
