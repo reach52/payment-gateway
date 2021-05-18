@@ -4,7 +4,7 @@ const {
   getTest,
   postTest,
   getSpecificTest,
-} = require("../controllers/module.controller");
+} = require("./controllers/module.controller");
 
 router.route("/").get(getTest).post(postTest);
 
