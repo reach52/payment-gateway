@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "cross-env DEBUG=server:debug NODE_ENV=development nodemon server.js",
-    "test": "cross-env DEBUG=server:debug NODE_ENV=test mocha ./test/ --reporter spec --exit",
     "prod": "cross-env DEBUG=server:debug NODE_ENV=production node server.js",
-    "report": "cross-env DEBUG=server:debug NODE_ENV=test mocha ./test/ --reporter mochawesome --exit"
+    "test": "cross-env DEBUG=server:debug NODE_ENV=test mocha ./test/index.test.js --reporter spec --exit",
+    "report": "cross-env DEBUG=server:debug NODE_ENV=test mocha ./test/index.test.js --reporter mochawesome --exit"
   },
   "dependencies": {
     "config": "^3.3.6",

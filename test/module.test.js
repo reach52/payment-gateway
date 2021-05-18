@@ -4,7 +4,7 @@ const chai = require("chai");
 
 const expect = chai.expect;
 
-describe("Root", () => {
+describe("Module", () => {
   describe("GET /", () => {
     it("Should respond with 200", (done) => {
       request(server)

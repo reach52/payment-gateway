@@ -34,7 +34,7 @@ app.use(morgan("combined", { stream: accessLogStream }));
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 /** routes */
-require("./routes/v1/")(app);
+require("./routes/v1/index.route")(app);
 
 const PORT = process.env.PORT || config.get("port");
 
