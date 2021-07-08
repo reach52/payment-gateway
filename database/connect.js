@@ -4,7 +4,7 @@ const mongoDBURL = require("config").get("mongoURL");
 
 module.exports = async () => {
   if (mongoDBURL === "" || mongoDBURL === null || mongoDBURL === undefined)
-    return console.log("host:", `   No Connection`);
+    return console.log("database:", `No Connection`);
 
   try {
     let conn = await mongoose.connect(mongoDBURL, {
@@ -13,7 +13,7 @@ module.exports = async () => {
       useCreateIndex: true,
       useFindAndModify: false,
     });
-    console.log("host:", `   ${conn.connection.host}`);
+    console.log("database:", `${conn.connection.host}`);
   } catch (error) {
     mongoose.connection.close(() => {
       console.error(
