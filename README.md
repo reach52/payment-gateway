@@ -10,23 +10,6 @@
 *** github_username, repo_name, twitter_handle, email, project_title, project_description
 -->
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
--->
-
 ## About The Project
 
 Reach52 payment gateway for all of its core application
@@ -137,20 +120,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Robert Janagap - [@Linkedin](https://www.linkedin.com/in/robert-janagap/)
 
 Project Link: [https://bitbucket.org/reach52/reach52-payment-gateway/src/master/](https://bitbucket.org/reach52/reach52-payment-gateway/src/master/)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!--
-[contributors-shield]: https://img.shields.io/github/contributors/Robert-Janagap/express-app-bootstrap
-[contributors-url]: https://github.com/Robert-Janagap/express-app-bootstrap/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Robert-Janagap/express-app-bootstrap
-[forks-url]: https://github.com/Robert-Janagap/express-app-bootstrap/network/members
-[stars-shield]: https://img.shields.io/github/stars/Robert-Janagap/express-app-bootstrap
-[stars-url]: https://github.com/Robert-Janagap/express-app-bootstrap/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Robert-Janagap/express-app-bootstrap
-[issues-url]: https://github.com/Robert-Janagap/express-app-bootstrap/issues
-[license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
-[license-url]: https://github.com/Robert-Janagap/express-app-bootstrap/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/robert-janagap/
--->
