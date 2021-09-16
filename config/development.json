@@ -1,5 +1,6 @@
 {
   "server": "development",
   "port": 4000,
-  "mongoURL": "mongodb://localhost/mock"
+  "mongoURL": "mongodb://localhost/mock",
+  "secretKey": "xnd_development_7OLjxMEqFavFVMsA2hIwWeEtVt9hI3y06HPFNYGd3bhFEviTFwGeNWLuCsWCX"
 }

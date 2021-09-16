@@ -17,7 +17,6 @@
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -26,62 +25,11 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/Robert-Janagap/express-app-bootstrap">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Express Bootstrap</h3>
-
-  <p align="center">
-    Express, MongoDB, Unit Testing, and CI/CD
-    <br />
-    <a href="https://github.com/Robert-Janagap/express-app-bootstrap"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Robert-Janagap/express-app-bootstrap">View Demo</a>
-    ·
-    <a href="https://github.com/Robert-Janagap/express-app-bootstrap/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Robert-Janagap/express-app-bootstrap/issues">Request Feature</a>
-  </p>
-</p>
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
-  </ol>
-</details>
-
-<!-- ABOUT THE PROJECT -->
+-->
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Backend expressJs bootstrap for awesome backend developers!
+Reach52 payment gateway for all of its core application
 
 ### Built With
 
@@ -94,8 +42,6 @@ Backend expressJs bootstrap for awesome backend developers!
 -   [CI/CD](https://en.wikipedia.org/wiki/CI/CD)
     -   [Jenkins](https://www.jenkins.io/)
 -   [Swagger Documentation](https://swagger.io/)
-
-<!-- GETTING STARTED -->
 
 ## Getting Started
 
@@ -116,14 +62,12 @@ Before anything else lets first install yarn
 
 1. Clone the repo
     ```sh
-    git clone https://github.com/Robert-Janagap/express-app-bootstrap.git
+    git clone https://reach52-xin@bitbucket.org/reach52/reach52-payment-gateway.git
     ```
 2. Install yarn packages
     ```sh
     yarn install
     ```
-
-<!-- USAGE EXAMPLES -->
 
 ## Usage
 
@@ -134,7 +78,8 @@ We have 3 types of environment test, development, production
     ```sh
        "server": "development",
        "port": "",
-       "mongoURL": ""
+       "mongoURL": "",
+       "secretKey": ""
     ```
     **run**
     ```sh
@@ -145,7 +90,8 @@ We have 3 types of environment test, development, production
     ```sh
        "server": "test",
        "port": "",
-       "mongoURL": ""
+       "mongoURL": "",
+       "secretKey": ""
     ```
     **run**
     ```sh
@@ -160,20 +106,17 @@ We have 3 types of environment test, development, production
     ```sh
        "server": "production",
        "port": "",
-       "mongoURL": ""
+       "mongoURL": "",
+       "secretKey": ""
     ```
     **run**
     ```sh
     yarn prod
     ```
 
-<!-- ROADMAP -->
-
 ## Roadmap
 
-See the [open issues](https://github.com/Robert-Janagap/express-app-bootstrap/issues) for a list of proposed features (and known issues).
-
-<!-- CONTRIBUTING -->
+See the [open issues](https://bitbucket.org/reach52/reach52-payment-gateway/jira?statuses=new&statuses=indeterminate&sort=-updated&page=1) for a list of proposed features (and known issues).
 
 ## Contributing
 
@@ -185,32 +128,19 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<!-- LICENSE -->
-
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- CONTACT -->
 
 ## Contact
 
 Robert Janagap - [@Linkedin](https://www.linkedin.com/in/robert-janagap/)
 
-Project Link: [https://github.com/Robert-Janagap/express-app-bootstrap](https://github.com/Robert-Janagap/express-app-bootstrap)
-
-<!-- ACKNOWLEDGEMENTS
-
-## Acknowledgements
-
--   []()
--   []()
--   []()
- -->
+Project Link: [https://bitbucket.org/reach52/reach52-payment-gateway/src/master/](https://bitbucket.org/reach52/reach52-payment-gateway/src/master/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
+<!--
 [contributors-shield]: https://img.shields.io/github/contributors/Robert-Janagap/express-app-bootstrap
 [contributors-url]: https://github.com/Robert-Janagap/express-app-bootstrap/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Robert-Janagap/express-app-bootstrap
@@ -223,3 +153,4 @@ Project Link: [https://github.com/Robert-Janagap/express-app-bootstrap](https://
 [license-url]: https://github.com/Robert-Janagap/express-app-bootstrap/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/robert-janagap/
+-->

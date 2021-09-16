@@ -1,72 +1,269 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "Express.js bootstrap with mongoDB, unit testing and jenkins",
+    "description": "Reach52 payment gateway for all its application",
     "version": "1.0.0",
-    "title": "Express Bootstrap",
-    "termsOfService": "https://github.com/Robert-Janagap/express-app-bootstrap/blob/master/LICENSE.txt",
+    "title": "Reach52 Payment Gateway",
+    "termsOfService": "",
     "contact": {
-      "email": "janagaprobert@gmail.com"
+      "email": "robert@reach52.com"
     },
     "license": {
-      "name": "MIT",
-      "url": "https://en.wikipedia.org/wiki/MIT_License"
+      "name": "",
+      "url": ""
     }
   },
   "host": "",
-  "basePath": "/v1",
+  "basePath": "/",
   "tags": [
     {
-      "name": "api",
-      "description": "Everything about your Pets",
+      "name": "payment",
+      "description": "Payment Gateway",
       "externalDocs": {
-        "description": "Find out more",
-        "url": "http://swagger.io"
+        "description": "",
+        "url": ""
       }
     }
   ],
   "schemes": ["http", "https"],
   "paths": {
-    "/": {
-      "get": {
-        "tags": ["api"],
-        "summary": "Add a new pet to the store",
-        "description": "",
-        "operationId": "addPet",
+    "/xendit/invoice": {
+      "post": {
+        "tags": ["payment"],
+        "summary": "Add reach52 customer invoice",
+        "description": "Reach52 customer will get its invoice",
+        "operationId": "addCustomerInvoice",
         "consumes": ["application/json"],
         "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Invoice form",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/invoiceForm"
+            }
+          }
+        ],
         "responses": {
           "200": {
-            "description": "successful operation"
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/invoiceResponse"
+            }
+          },
+          "400": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/errorValidation"
+            }
           }
         }
       }
     }
   },
   "definitions": {
-    "model": {
+    "errorValidation": {
+      "type": "object",
+      "properties": {
+        "errors": {
+          "type": "array"
+        },
+        "message": {
+          "type": "string"
+        },
+        "status": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "message": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "invoiceForm": {
+      "type": "object",
+      "properties": {
+        "externalID": {
+          "type": "string",
+          "example": "demo_1475801962607"
+        },
+        "amount": {
+          "type": "number",
+          "example": "1200"
+        },
+        "description": {
+          "type": "string",
+          "example": "test payment"
+        },
+        "should_send_email": {
+          "type": "boolean"
+        },
+        "payer_email": {
+          "type": "string",
+          "example": "robert@reach52.com"
+        },
+        "customer": {
+          "type": "object",
+          "properties": {
+            "given_names": {
+              "type": "string",
+              "example": "Robert"
+            },
+            "email": {
+              "type": "string",
+              "example": "robert@reach52.com"
+            },
+            "mobile_number": {
+              "type": "string",
+              "example": "+639560793222"
+            }
+          }
+        },
+        "currency": {
+          "type": "string",
+          "example": "PHP"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "example": "siomai"
+              },
+              "quantity": {
+                "type": "number",
+                "example": "2"
+              },
+              "price": {
+                "type": "number",
+                "example": "23"
+              }
+            }
+          }
+        }
+      }
+    },
+    "invoiceResponse": {
       "type": "object",
       "properties": {
         "id": {
-          "type": "integer",
-          "format": "int64"
-        },
-        "userId": {
-          "type": "integer",
-          "format": "int64"
-        },
-        "date": {
           "type": "string",
-          "format": "date-time"
+          "example": "6142bcde651ce324d0507759"
+        },
+        "external_id": {
+          "type": "string",
+          "example": "demo_1475801962607"
+        },
+        "user_id": {
+          "type": "string",
+          "example": "607e2d0ae6e82e306cd7d037"
         },
         "status": {
           "type": "string",
-          "description": "Order Status",
-          "enum": ["placed", "approved", "delivered"]
+          "example": "PENDING"
         },
-        "complete": {
-          "type": "boolean",
-          "default": false
+        "merchant_name": {
+          "type": "string",
+          "example": "reach52"
+        },
+        "merchant_profile_picture_url": {
+          "type": "string",
+          "example": "https://xnd-companies.s3.amazonaws.com/prod/1618892925931_811.jpg"
+        },
+        "amount": {
+          "type": "number",
+          "example": "1200"
+        },
+        "description": {
+          "type": "string",
+          "example": "test payment"
+        },
+        "expiry_date": {
+          "type": "string",
+          "example": "2021-09-17T03:41:17.567Z"
+        },
+        "invoice_url": {
+          "type": "string",
+          "example": "https://checkout-staging.xendit.co/web/6142bcde651ce324d0507759"
+        },
+        "available_banks": {
+          "type": "array",
+          "items": {}
+        },
+        "available_ewallets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ewallet_type": {
+                "type": "string",
+                "example": "PAYMAYA"
+              }
+            }
+          }
+        },
+        "should_exclude_credit_card": {
+          "type": "boolean"
+        },
+        "should_send_email": {
+          "type": "boolean"
+        },
+        "created": {
+          "type": "string",
+          "example": "2021-09-16T03:41:18.774Z"
+        },
+        "updated": {
+          "type": "string",
+          "example": "2021-09-16T03:41:18.774Z"
+        },
+        "currency": {
+          "type": "string",
+          "example": "PHP"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "example": "siomai"
+              },
+              "quantity": {
+                "type": "number",
+                "example": "2"
+              },
+              "price": {
+                "type": "number",
+                "example": "23"
+              }
+            }
+          }
+        },
+        "customer": {
+          "type": "object",
+          "properties": {
+            "given_names": {
+              "type": "string",
+              "example": "Robert"
+            },
+            "email": {
+              "type": "string",
+              "example": "robert@reach52.com"
+            },
+            "mobile_number": {
+              "type": "string",
+              "example": "+639560793222"
+            }
+          }
         }
       }
     }
