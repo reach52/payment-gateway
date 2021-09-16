@@ -1,4 +1,4 @@
-const CreateInvoice = require("../../../../lib/xendit/invoice");
+const { CreateInvoice, GetInvoice } = require("../../../../lib/xendit/invoice");
 const ErrorHandling = require("../../../../lib/errorsHandling");
 const { validationResult } = require('express-validator');
 
@@ -27,4 +27,24 @@ exports.createInvoice = async (req, res) => {
         res.status(500).json(error)
     }
 
+}
+
+/**
+ * @desc    get invoice
+ * @author  Robert Janagap
+ * @since   Sept. 16, 2021
+ * @api     /xendit/invoice
+ * @method  GET    
+ * @ref     https://developers.xendit.co/api-reference/?_ga=2.204315415.661640618.1631524746-432699479.1631524746&_gac=1.90521064.1631676369.Cj0KCQjwkIGKBhCxARIsAINMioK-fCba9S84fChtvD2AyLbgipIadmIDWqZhV4bFBljHnHsXv3Rm2REaAiDiEALw_wcB#get-invoice
+ */
+exports.getInvoice = async (req, res) => {
+    let { invoiceID } = req.params
+
+    try {
+        const data = await GetInvoice(invoiceID)
+
+        res.status(200).json(data)
+    } catch (error) {
+        res.status(500).json(error)
+    }
 }

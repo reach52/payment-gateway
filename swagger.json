@@ -61,6 +61,32 @@
           }
         }
       }
+    },
+    "/xendit/invoice/{invoiceID}": {
+      "get": {
+        "tags": ["payment"],
+        "summary": "Get reach52 customer invoice",
+        "description": "Reach52 get customer invoice by id",
+        "operationId": "getCustomerInvoice",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "invoiceID",
+            "description": "Invoice id",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/invoiceResponse"
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {

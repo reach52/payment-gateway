@@ -3,7 +3,8 @@ const router = express.Router();
 const { check } = require('express-validator');
 
 const {
-    createInvoice
+    createInvoice,
+    getInvoice
 } = require("./controllers/invoice.controller")
 
 router.route("/").post(
@@ -12,6 +13,8 @@ router.route("/").post(
         check('amount', 'Amount is invalid').isNumeric(),
         check('externalID', "externalID is required").not().isEmpty()
     ]
-    , createInvoice)
+    , createInvoice);
+
+router.route("/:invoiceID").get(getInvoice);
 
 module.exports = router;
