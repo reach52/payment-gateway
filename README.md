@@ -50,7 +50,7 @@ We have 3 types of environment test, development, production
        "server": "development",
        "port": "",
        "mongoURL": "",
-       "secretKey": ""
+       "secretKey": "" // xendit secret key
     ```
     **run**
     ```sh
